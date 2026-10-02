@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- مشخص کردن نوع سند به عنوان HTML5 -->
+<html lang="fa" dir="rtl">
+<head>
+    <!-- تعیین کدگذاری برای نمایش صحیح فارسی -->
+    <meta charset="UTF-8">
+
+    <!-- سازگار کردن سایت با نمایشگرهای مختلف -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- عنوان صفحه -->
+    <title>فعالیت‌های علمی | استاد</title>
+
+    <!-- اتصال فایل CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- نوار بالای سایت -->
+    <header class="header">
+        <!-- نام سایت -->
+        <div class="logo">پرونده علمی استاد</div>
+
+        <!-- دکمه منوی موبایل -->
+        <button class="menu-button" aria-label="باز کردن منو">☰</button>
+
+        <!-- منوی اصلی -->
+        <nav class="nav-menu">
+            <a href="index.html">معرفی استاد</a>
+            <a class="active" href="activities.html">فعالیت‌های علمی</a>
+        </nav>
+    </header>
+
+    <!-- محتوای اصلی صفحه -->
+    <main>
+        <!-- عنوان صفحه دوم -->
+        <section class="page-heading">
+            <span class="badge">فعالیت‌های علمی و پژوهشی</span>
+            <h1>سوابق علمی استاد</h1>
+            <p>نمونه‌ای از سخنرانی‌ها، مقالات و مدارک علمی استاد</p>
+        </section>
+
+        <!-- بخش سخنرانی‌ها -->
+        <section class="section">
+            <div class="section-title">
+                <span>01</span>
+                <h2>سخنرانی‌های علمی</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="date">۱۴۰۳</span>
+                    <div>
+                        <h3>هوش مصنوعی و آینده فناوری</h3>
+                        <p>ارائه سخنرانی علمی درباره کاربردهای هوش مصنوعی در فناوری اطلاعات.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="date">۱۴۰۲</span>
+                    <div>
+                        <h3>امنیت در سامانه‌های نرم‌افزاری</h3>
+                        <p>بررسی چالش‌های امنیتی و راهکارهای افزایش امنیت نرم‌افزارها.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="date">۱۴۰۱</span>
+                    <div>
+                        <h3>نقش برنامه‌نویسی در صنعت</h3>
+                        <p>بررسی مهارت‌های مورد نیاز دانشجویان برای ورود به بازار کار فناوری.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- بخش مقالات -->
+        <section class="section">
+            <div class="section-title">
+                <span>02</span>
+                <h2>مقالات و پژوهش‌ها</h2>
+            </div>
+
+            <div class="cards">
+                <article class="activity-card">
+                    <span class="card-number">01</span>
+                    <h3>کاربرد هوش مصنوعی در آموزش</h3>
+                    <p>پژوهشی درباره استفاده از روش‌های هوشمند در فرآیند آموزش.</p>
+                    <span class="tag">پژوهش</span>
+                </article>
+
+                <article class="activity-card">
+                    <span class="card-number">02</span>
+                    <h3>بررسی امنیت نرم‌افزار</h3>
+                    <p>مطالعه روش‌های شناسایی و کاهش آسیب‌پذیری‌های نرم‌افزاری.</p>
+                    <span class="tag">مقاله</span>
+                </article>
+
+                <article class="activity-card">
+                    <span class="card-number">03</span>
+                    <h3>فناوری اطلاعات و دانشگاه</h3>
+                    <p>بررسی نقش فناوری اطلاعات در بهبود فرآیندهای دانشگاهی.</p>
+                    <span class="tag">پژوهش</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- بخش مدارک -->
+        <section class="section">
+            <div class="section-title">
+                <span>03</span>
+                <h2>مدارک و گواهینامه‌ها</h2>
+            </div>
+
+            <div class="certificate-grid">
+                <article class="certificate-card">
+                    <img src="images/certificate1.jpg" alt="مدرک علمی اول" class="certificate-image">
+                    <h3>گواهینامه شرکت در همایش علمی</h3>
+                    <button class="view-button" data-image="images/certificate1.jpg">
+                        مشاهده مدرک
+                    </button>
+                </article>
+
+                <article class="certificate-card">
+                    <img src="images/certificate2.jpg" alt="مدرک علمی دوم" class="certificate-image">
+                    <h3>گواهینامه ارائه مقاله</h3>
+                    <button class="view-button" data-image="images/certificate2.jpg">
+                        مشاهده مدرک
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- پنجره بزرگ‌نمایی تصاویر مدارک -->
+    <div class="modal" id="imageModal">
+        <button class="close-modal" aria-label="بستن">×</button>
+        <img id="modalImage" src="" alt="نمایش بزرگ مدرک">
+    </div>
+
+    <!-- پایین صفحه -->
+    <footer class="footer">
+        <p>طراحی شده برای پروژه دانشگاهی</p>
+    </footer>
+
+    <!-- اتصال JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
